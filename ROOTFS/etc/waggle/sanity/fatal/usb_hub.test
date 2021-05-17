@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! lsusb | grep -q 05e3:0610; then
-    echo "USB Hub Test: device not found Fail"
+    echo "USB Hub Test: device not found FAIL"
     exit 1
 fi
 
