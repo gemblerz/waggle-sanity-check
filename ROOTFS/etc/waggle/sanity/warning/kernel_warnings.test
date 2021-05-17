@@ -5,7 +5,7 @@
 # sanity test suite is run every hour.
 # -k is kernel logs ~ dmesg
 # -p 4 is warning level entries
-if journalctl -q -k -p 4 --since -2h | grep .; then
+if journalctl -q -k -p 4 --since -2h | grep -q .; then
     echo "Kernel Warnings Test: FAIL"
     exit 1
 fi
